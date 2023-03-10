@@ -1,10 +1,7 @@
 package com.sean.uniqueid.generator.impl;
 
-import com.google.common.annotations.VisibleForTesting;
 import com.sean.uniqueid.generator.LogTraceIdGenerator;
 import com.sean.uniqueid.generator.excetiopn.IdGenerationFailureException;
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -21,8 +18,6 @@ import java.util.Random;
  */
 
 public class RandomIdGenerator implements LogTraceIdGenerator {
-
-    private static final Logger logger = LoggerFactory.getLogger(RandomIdGenerator.class);
 
     @Override
     public String generate() {
